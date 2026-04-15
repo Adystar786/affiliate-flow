@@ -8,12 +8,12 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="text-sm font-bold text-primary-foreground">P</span>
+                <span className="text-sm font-bold text-primary-foreground">⚡</span>
               </div>
-              <span className="text-lg font-bold text-foreground">PicksForYou</span>
+              <span className="text-lg font-bold text-foreground">Pickify</span>
             </div>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-xs">
-              Your trusted source for handpicked product recommendations and honest reviews.
+              Your go-to source for AI-powered electronics. Expert reviews and the best deals on smart devices, AI gadgets, and cutting-edge tech.
             </p>
           </div>
           <div>
@@ -29,12 +29,12 @@ export function Footer() {
             <ul className="space-y-2.5">
               <li><Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About Us</Link></li>
               <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Affiliate Disclosure</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-4">Stay Updated</h4>
-            <p className="text-sm text-muted-foreground mb-3">Get the best deals in your inbox.</p>
+            <p className="text-sm text-muted-foreground mb-3">Get the latest AI gadget deals in your inbox.</p>
             <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
               <input type="email" placeholder="Email" className="flex-1 rounded-lg border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring" />
               <button type="submit" className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors">
@@ -45,7 +45,7 @@ export function Footer() {
         </div>
         <div className="mt-10 pt-6 border-t border-border">
           <p className="text-xs text-muted-foreground text-center">
-            © {new Date().getFullYear()} PicksForYou. As an Amazon Associate, we earn from qualifying purchases.
+            © {new Date().getFullYear()} Pickify. As an Amazon Associate, we earn from qualifying purchases. All product names, logos, and brands are property of their respective owners.
           </p>
         </div>
       </div>

@@ -10,9 +10,9 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-              <span className="text-lg font-bold text-primary-foreground">P</span>
+              <span className="text-lg font-bold text-primary-foreground">⚡</span>
             </div>
-            <span className="text-xl font-bold text-foreground tracking-tight">PicksForYou</span>
+            <span className="text-xl font-bold text-foreground tracking-tight">Pickify</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
