@@ -6,10 +6,28 @@ import { categories, products } from "@/data/products";
 export const Route = createFileRoute("/categories")({
   head: () => ({
     meta: [
-      { title: "Browse Categories — PicksForYou" },
-      { name: "description", content: "Explore products by category. Electronics, fashion, home, beauty, sports, and more." },
-      { property: "og:title", content: "Browse Categories — PicksForYou" },
-      { property: "og:description", content: "Explore products by category." },
+      { title: "AI Electronics Categories — Pickify" },
+      { name: "description", content: "Browse AI-powered electronics by category: AI Audio, AI Wearables, Smart Home, AI Security, Drones & more. Find the perfect smart gadget." },
+      { property: "og:title", content: "AI Electronics Categories — Pickify" },
+      { property: "og:description", content: "Browse AI-powered electronics by category. Find the perfect smart gadget." },
+      { name: "twitter:title", content: "AI Electronics Categories — Pickify" },
+      { name: "twitter:description", content: "Browse AI electronics by category." },
+      { name: "keywords", content: "AI electronics categories, smart home devices, AI wearables, AI audio, AI security cameras, AI drones, smart gadgets by category" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://pickify.com/categories" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "AI Electronics Categories",
+          description: "Browse AI-powered electronics by category.",
+          url: "https://pickify.com/categories",
+        }),
+      },
     ],
   }),
   component: CategoriesPage,
@@ -20,8 +38,8 @@ function CategoriesPage() {
     <div className="py-12 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground tracking-tight">Browse Categories</h1>
-          <p className="mt-4 text-muted-foreground max-w-lg mx-auto">Find the perfect product in your favorite category.</p>
+          <h1 className="text-4xl sm:text-5xl font-bold text-foreground tracking-tight">AI Electronics Categories</h1>
+          <p className="mt-4 text-muted-foreground max-w-lg mx-auto">Find the perfect AI-powered gadget in your favorite category.</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
           {categories.map((cat, i) => (
@@ -30,7 +48,7 @@ function CategoriesPage() {
         </div>
 
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight">All Products</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight">All AI Products</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {products.map((product, i) => (
